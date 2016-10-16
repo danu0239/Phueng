@@ -67,6 +67,9 @@ public class TrafficAdapter extends BaseAdapter{
             detailTextView.setText(detailStrings[position].substring(0, 30) + "...");
         }
 
+        //Change image การเปลี่ยนรูปตามต้องการ
+        imageView.setImageResource(ints[position]);
+
 
         return view;
     }
