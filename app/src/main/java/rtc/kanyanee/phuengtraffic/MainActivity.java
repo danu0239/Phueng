@@ -41,9 +41,24 @@ public class MainActivity extends AppCompatActivity {
                 intent.setData(Uri.parse(url));
                 startActivity(intent);
 
+                // onClick
             }   // onClick
         });
 
+
+        // ListView Controller
+        // Get Value from Class
+        MyConstant myConstant = new MyConstant();
+        int[] ints = myConstant.getInts();
+
+        // Get Value From xml
+        String[] titleStrings = getResources().getStringArray(R.array.title);
+        String[] detailStrings = getResources().getStringArray(R.array.detail);
+
+        //Create ListView
+        TrafficAdapter trafficAdapter = new TrafficAdapter(MainActivity.this,
+                titleStrings, detailStrings, ints);
+        listView.setAdapter(trafficAdapter);
 
     }   // Main Method กลุ่มของคำสั่ง
 
