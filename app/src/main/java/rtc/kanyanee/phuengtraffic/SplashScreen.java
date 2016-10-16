@@ -11,12 +11,13 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash_screen);
 
-        // Sound Effect
+        //Sound Effect
         MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.intro_tata);
         mediaPlayer.start();
 
-        //Auto Run
+        // Auto Run
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -27,6 +28,6 @@ public class SplashScreen extends AppCompatActivity {
         }, 9000);
 
 
+    }   // Main Method
 
-    }   //Main Metmod
 }   // Main Class
