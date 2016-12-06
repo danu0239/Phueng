@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="rtc.kanyanee.phuengtraffic.DetailActivity"
-    android:background="@drawable/bg2">
+    android:background="@drawable/bg99">
 
     <Button
         android:text="Back"
@@ -38,7 +38,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/traffic_01"
+            app:srcCompat="@drawable/d"
             android:id="@+id/imageView2"
             android:layout_margin="20dp" />
 

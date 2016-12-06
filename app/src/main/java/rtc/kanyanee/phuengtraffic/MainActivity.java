@@ -31,18 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // sound Effect
-                MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(),
-                        R.raw.cat);
-                mediaPlayer.start();
 
-                //Show WebView
-                String url = "https://youtu.be/D46cvfCW2xA";
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
-                startActivity(intent);
-
-                // onClick
             }   // onClick
         });
 
@@ -62,13 +51,13 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(trafficAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                intent.putExtra("Title", titleStrings[position]);
-                intent.putExtra("Image", ints[position]);
-                intent.putExtra("Detail", detailStrings[position]);
-                startActivity(intent);
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                        intent.putExtra("Title", titleStrings[position]);
+                        intent.putExtra("Image", ints[position]);
+                        intent.putExtra("Detail", detailStrings[position]);
+                        startActivity(intent);
             }
         });
 

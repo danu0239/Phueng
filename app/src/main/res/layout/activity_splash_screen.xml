@@ -10,13 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="rtc.kanyanee.phuengtraffic.SplashScreen"
-    android:background="@drawable/bg2">
+    android:background="@drawable/f">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo_bmi_master"
-        android:id="@+id/imageView3"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true" />
+
 </RelativeLayout>

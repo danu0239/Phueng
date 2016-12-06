@@ -8,11 +8,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="rtc.kanyanee.phuengtraffic.MainActivity"
-    android:background="@drawable/bg2">
+    tools:context="rtc.kanyanee.phuengtraffic.Main2Activity"
+    android:background="@drawable/bg99">
 
     <TextView
-        android:text="@string/title_main"
+        android:text="@string/titleMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
