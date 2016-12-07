@@ -28,7 +28,7 @@ public class DetailActivity extends AppCompatActivity {
         // Show View
         titleTextView.setText(getIntent().getStringExtra("Title"));
         detailTextView.setText(getIntent().getStringExtra("Detail"));
-        imageView.setImageResource(getIntent().getIntExtra("Image", R.drawable.traffic_01));
+        imageView.setImageResource(getIntent().getIntExtra("Image", R.drawable.newLand1));
 
         // Button Controller
         button.setOnClickListener(new View.OnClickListener() {
